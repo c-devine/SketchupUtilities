@@ -4,7 +4,7 @@ Repository for various Sketchup utilities.
 ## airfoil_tools.rb
 * Loads Selig format airfoil .dat files into Sketchup.
 * Export selected face to .dat file.
-<img src="https://raw.githubusercontent.com/c-devine/SketchupUtilities/snapshots/assets/img/airfoil.png?raw=true" width="320" height="240">
+<img src="https://raw.githubusercontent.com/c-devine/SketchupUtilities/snapshots/assets/img/airfoil.png?raw=true" width="382" height="180">
 
 
 ## convert_to_mm.rb
