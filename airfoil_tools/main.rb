@@ -55,7 +55,7 @@ module WGB
         return
       end
 
-      # find the min vertice
+      # find the min vertex
       minVert = vertices[0]
 
       vertices.each { |v|
@@ -82,7 +82,7 @@ module WGB
 
      File.open(chosen_file, 'w') { |file|
 
-     file.puts "Airfoil exported from Sketchup " + Time.now.strftime("%d/%m/%Y %H:%M").to_s
+     file.puts "Airfoil exported from Sketchup " + Time.now.strftime("%m/%d/%Y %H:%M").to_s
      file.puts "     "
 
       maxX = 0
@@ -98,13 +98,13 @@ module WGB
         loop += 1
       }
 
-      for i in 0...maxIndex
+      for i in 0..maxIndex
         x = offsetVertices[maxIndex - i][0] / maxX
         y = offsetVertices[maxIndex - i][1] / maxX
         file.puts x.to_s + "    " + y.to_s
       end
 
-      for i in 1... (offsetVertices.length - (maxIndex-1) )
+      for i in 1..(offsetVertices.length - maxIndex )
         x = offsetVertices[offsetVertices.length - i][0] / maxX
         y = offsetVertices[vertices.length - i][1] / maxX
         file.puts x.to_s + "    " + y.to_s
